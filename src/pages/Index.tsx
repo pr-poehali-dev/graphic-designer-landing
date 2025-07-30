@@ -36,10 +36,7 @@ const Index = () => {
           <p className="font-gothic text-2xl md:text-3xl text-gothic-light mb-8 tracking-wide">
             Арт & Дизайн
           </p>
-          <p className="font-body text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Создаем уникальные визуальные решения в готическом стиле. 
-            Погружаемся в мир мрачной элегантности и средневековой эстетики.
-          </p>
+          <p className="font-body md:text-xl text-gray-300 max-w-2xl leading-relaxed my-[43px] mx-[62px] px-14 text-4xl font-bold">Создадим искусство вместе</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
