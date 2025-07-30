@@ -61,12 +61,24 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// MEKO Gothic colors
+				gothic: {
+					red: '#DC2626',
+					black: '#000000',
+					dark: '#1F1F1F',
+					gray: '#333333',
+					light: '#F5F5F5',
 				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			fontFamily: {
+				gothic: ['Cinzel', 'serif'],
+				body: ['Inter', 'sans-serif'],
 			},
 			keyframes: {
 				'accordion-down': {
@@ -84,11 +96,26 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' },
+				},
+				'scale-in': {
+					'0%': { transform: 'scale(0.95)', opacity: '0' },
+					'100%': { transform: 'scale(1)', opacity: '1' },
+				},
+				'gothic-glow': {
+					'0%, 100%': { boxShadow: '0 0 5px #DC2626' },
+					'50%': { boxShadow: '0 0 20px #DC2626, 0 0 30px #DC2626' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'scale-in': 'scale-in 0.4s ease-out',
+				'gothic-glow': 'gothic-glow 2s ease-in-out infinite',
 			}
 		}
 	},
