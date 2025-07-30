@@ -30,9 +30,7 @@ const Index = () => {
             />
           </div>
           
-          <h1 className="font-gothic text-6xl md:text-8xl font-bold text-gothic-red mb-6 tracking-wider">
-            MEKO
-          </h1>
+          <h1 className="font-gothic md:text-8xl font-bold text-gothic-red mb-6 tracking-wider text-5xl">Студия дизайна и графики</h1>
           <p className="font-gothic text-2xl md:text-3xl text-gothic-light mb-8 tracking-wide">
             Арт & Дизайн
           </p>
